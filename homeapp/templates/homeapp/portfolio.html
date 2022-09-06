@@ -1,0 +1,65 @@
+{% extends 'homeapp/base.html' %}
+{% load static %}
+{% block title %}Portfolio{% endblock title %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+<div class="hero hero-single route bg-image">
+    <div class="overlay-mf" style="opacity: 1;"></div>
+    <div class="hero-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                <h2 class="hero-title mb-4">Portfolio</h2>
+                <!-- <p class="subtitle-a">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p> -->
+               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======= Portfolio Section ======= -->
+<section id="work" class="portfolio-mf sect-pt2 route">
+    <div class="container">
+        
+        <div class="row">
+            {% for port in portfolio %}
+            <div class="col-md-4">
+                <div class="work-box">
+                    <a href="/portfolio/{{ port.slug }}">
+                        <div class="work-img">
+                            <img src="{{ port.logo.url }}" alt="" class="img-fluid">
+                        </div>
+                    </a>
+                    <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h2 class="w-title"><a href="/portfolio/{{ port.slug }}"> {{ port.name }}</a></h2>
+                                <div class="w-more">
+                                    <span class="w-ctegory">{{ port.category }}</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="w-like">
+                                    <a href="/portfolio/{{ port.slug }}"> <span class="bi bi-eye-fill"></span></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+          
+        </div>
+    </div>
+</section><!-- End Portfolio Section -->
+
+
+
+
+
+
+{% endblock content %}
+{% block js %}{% endblock js %}

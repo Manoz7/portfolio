@@ -1,0 +1,143 @@
+{% extends 'homeapp/base.html' %}
+{% load static %}
+{% block title %}{{ port.name }}{% endblock title %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+<div class="hero hero-single route bg-image">
+    <div class="overlay-mf" style="opacity: 1;"></div>
+    <div class="hero-content display-table">
+        <div class="table-cell">
+            <div class="container">
+
+                <h2 class="hero-title mb-4">
+                    {{ port.name }}
+                </h2>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+            <div class="portfolio-info">
+                <h3>Project Information</h3>
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <ul>
+
+                            <li>
+                                <strong>Title: <span style="color: #114c78; font-size:24px;"> {{port.name}} </span>
+                                </strong>
+                            </li>
+
+                            <li><strong>Category</strong>: {{port.category}}</li>
+                            <li><strong>Published Date</strong>: {{port.published_date}}</li>
+                            <li><strong>Project URL</strong>: <a href="{{port.url}}" target="_blank">{{port.url}}</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="port_logo">
+                            <img src="{{port.logo.url}}" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-description">
+                <h2>Project Details</h2>
+                <div>
+                    {{ port.con|safe}}
+                </div>
+            </div>
+
+            <div class="my-4">
+                <h2 class="mb-3 font-weight-bold">
+                    Some Snapshots
+                </h2>
+                <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+
+                        <div class="swiper-slide">
+                            <img src="{{port.photo1.url}}" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="{{port.photo2.url}}" alt="">
+                        </div>
+
+                        {% if port.photo3.url != NULL %}
+                        <div class="swiper-slide">
+                            <img src="{{port.photo3.url}}" alt="">
+                        </div>
+                        {% endif %}
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- End Portfolio Details Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt2 route">
+        <div class="container">
+            <div class="my-4">
+
+                <h2 class="mb-3 font-weight-bold text-center">
+                    Similar Projects
+                </h2>
+            </div>
+
+
+            <div class="row">
+                {% for port in portfolio|slice:':3' %}
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="/portfolio/{{ port.slug }}">
+                            <div class="work-img">
+                                <img src="{{ port.logo.url }}" alt="" class="img-fluid">
+                            </div>
+                        </a>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title"><a href="/portfolio/{{ port.slug }}"> {{ port.name }}</a></h2>
+
+                                    <div class="w-more">
+                                        <span class="w-ctegory">{{ port.category }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <a href="/portfolio/{{ port.slug }}"> <span class="bi bi-eye-fill"></span></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section><!-- End Portfolio Section -->
+
+</main>
+<!-- End #main -->
+
+{% endblock content %}
+{% block js %}{% endblock js %}
