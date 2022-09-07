@@ -1,0 +1,175 @@
+{% extends 'homeapp/base.html' %}
+{% load static %}
+{% block title %}Portfolio{% endblock title %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+<div class="hero hero-single route bg-image">
+    <div class="overlay-mf" style="opacity: 1;"></div>
+    <div class="hero-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                <h2 class="hero-title mb-4">About Me</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about-mf sect-pt2 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    <div class="row">
+                        
+                        <div class="col-md-8 about-8">
+                            <div class="about-me pt-4 pt-md-0">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">
+                                        About Me
+                                    </h5>
+                                </div>
+                                <p class="lead">
+                                    Hello, I am Manoj Khanal. I recently graduated in B.Sc CSIT from Patan Multiple
+                                    Campus in Lalitpur, Nepal. I live in Koteshwor-32, Kathmandu.
+                                </p>
+                                <p class="lead">
+                                    I am a web developer. I'm familiar with a few programming languages. I am capable of
+                                    managing websites ranging from simple to complex. Among my specialties are Python,
+                                    Django, Django Rest Framework, HTML, CSS3, JavaScript, Tailwind CSS, Wordpress,
+                                    Bootstrap, and other technologies. I also have experience with version control
+                                    systems such as Git, as well as docker and authentication systems.
+                                </p>
+                                <p class="lead">
+                                    I've mostly worked as a freelancer in my professional career. For six months, I
+                                    worked as a backend developer at Adhyaaya Technologies in Pulchowk. I had completed
+                                    several projects. Awiskaar Solutions is another company I've worked with. I had
+                                    overseen projects from start to finish. My completed projects are described briefly
+                                    in the portfolio section. </p>
+                                </p>
+                                <p class="lead">
+                                    Everything from small business websites to rich interactive web applications appeals
+                                    to me. If you are a company looking for a web presence or an employer looking to
+                                    hire, please contact me here. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 lottie-about">
+                            <lottie-player src="{% static '/assets/js/about.json'%}" background="transparent" speed="1" loop
+                      autoplay></lottie-player>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End About Section -->
+
+<!-- ======= Personal Details Section ======= -->
+<section id="pd" class="about-mf sect-pt2 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="title-box-2">
+                                <h5 class="title-left">
+                                    Personal Details
+                                </h5>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-md-12">
+                                    <div class="about-info">
+                                        <p><span class="title-s">Name: </span> <span>Manoj Khanal</span></p>
+                                        <p><span class="title-s">Profile: </span> <span>Web Developer</span></p>
+                                        <p><span class="title-s">Email: </span> <span>manojkhanal936@gmail.com</span>
+                                        </p>
+                                        <p><span class="title-s">Phone: </span> <span>+977-9860427842</span></p>
+                                        <p><span class="title-s">Facebook: </span> <a href="https://www.facebook.com/manoj.khanal.33/" target="_blank">@manojkhanal33</a></p>
+
+                                        <p><span class="title-s">Instagram: </span> <a href="https://www.instagram.com/manozkhanal7/" target="_blank">@manozkhanal7</a></p>
+                                        <p><span class="title-s">Twitter: </span> <a href="https://twitter.com/ManozKhanal" target="_blank">@ManozKhanal</a></p>
+
+                                        <p><span class="title-s">Linkedin: </span> <a href="https://www.linkedin.com/in/manoj-khanal-1136771b7/" target="_blank">@manojkhanal</a></p>
+
+                                        <p><span class="title-s">GitHub: </span> <a href="https://github.com/Manoz7" target="_blank">Manoz7</span></p>
+
+
+                                        <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Contact Me <i
+                                            class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-mf">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">
+                                        Skills
+                                    </h5>
+                                </div>
+                                <span>HTML</span> <span class="pull-right"></span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                                <span>CSS3</span> <span class="pull-right"></span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100">75%</div>
+                                </div>
+                                <span>Python</span> <span class="pull-right"></span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100">60%</div>
+                                </div>
+                                <span>Django</span> <span class="pull-right"></span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                                <span>Graphic Design</span> <span class="pull-right"></span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                                <span>Bootstrap</span> <span class="pull-right"></span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100">75%</div>
+                                </div>
+                                <span>Tailwind CSS</span> <span class="pull-right"></span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End About Section -->
+
+
+
+<!-- End About Section -->
+
+
+
+
+
+
+{% endblock content %}
+{% block js %}{% endblock js %}

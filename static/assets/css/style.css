@@ -218,7 +218,7 @@ font-family: Aquawax;
 
 @media (min-width: 768px) {
   .box-shadow-full {
-    padding: 3rem;
+    padding: 2rem;
   }
 }
 
@@ -862,6 +862,7 @@ font-family: Aquawax;
 
 .about-mf .about-img {
   margin-bottom: 2rem;
+  width: 49%;
 }
 
 .about-mf .about-img img {
@@ -1536,4 +1537,23 @@ footer .credits a {
   background-color: #043a63; 
   color:white; 
   border-radius:20px;
+}
+
+
+/* About section */
+@media (max-width: 768px) {
+  .about-row{
+    flex-direction: column-reverse;
+  }
+
+  .lottie-about{
+    display: none;
+  }
+  .about-8{
+    width: 100%;
+  }
+}
+
+.text-justify{
+  text-align: justify;
 }

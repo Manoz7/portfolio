@@ -5,275 +5,249 @@
 {% block css %}{% endblock css %}
 
 {% block content %}
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url({% static 'assets/img/code.jpg'%})">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h3 class="hero-title">Let's Build <span style="color: rgb(241, 160, 8);"> Together. </span></h3>
-          <!-- <p class="hero-subtitle">I am a freelance web developer from Kathmandu, Nepal. </p> -->
-          <div class="pt-2">
-            <a class="btn hero-btn js-scroll px-4" href="#about" role="button">Learn More <i class="bi bi-arrow-right"></i> </a>
-            <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me <i class="bi bi-arrow-right"></i></a>
-            
-          </div>
+<!-- ======= Hero Section ======= -->
+<div id="hero" class="hero route bg-image" style="background-image: url({% static 'assets/img/code.jpg'%})">
+  <div class="overlay-itro"></div>
+  <div class="hero-content display-table">
+    <div class="table-cell">
+      <div class="container">
+        <h3 class="hero-title">Let's Build <span style="color: rgb(241, 160, 8);"> Together. </span></h3>
+        <!-- <p class="hero-subtitle">I am a freelance web developer from Kathmandu, Nepal. </p> -->
+        <div class="pt-2">
+          <a class="btn hero-btn js-scroll px-4" href="#about" role="button">Learn More <i
+              class="bi bi-arrow-right"></i> </a>
+          <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me <i
+              class="bi bi-arrow-right"></i></a>
+
         </div>
       </div>
     </div>
   </div>
-  <!-- End Hero Section -->
+</div>
+<!-- End Hero Section -->
 
-  <main id="main">
+<main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt2 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about-mf sect-pt2 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="mb-4">
+              <h5 class="title-left">
+                About Me
+              </h5>
+            </div>
+            <div class="row align-items-center about-row">
+              <div class="col-md-6">
+                <div class="about-me pt-md-0 text-justify">
+                  <p class="lead">
+                    I am a web developer. I'm familiar with a few programming languages. I am capable of managing
+                    websites ranging from simple to complex. Among my specialties are Python, Django, Django Rest
+                    Framework, HTML, CSS3, JavaScript, Tailwind CSS, Wordpress, Bootstrap, and other technologies. I
+                    also have experience with version control systems such as Git, as well as docker and authentication
+                    systems. 
+                  </p>
+
+                  <p class="lead">
+                    Everything from small business websites to rich interactive web applications appeals
+                    to me. If you are a company looking for a web presence or an employer looking to
+                    hire, please contact me here. 
+                  </p>
+                  <p class="lead text-center">
+                    <a class="btn hero-btn js-scroll" href="#contact" role="button">Hire Me <i
+                      class="bi bi-arrow-right"></i></a>
+                  </p>
+                  
+                </div>
+              </div>
+              <div class="col-md-6 text-center pb-3">
+                <div class="about-img m-auto">
+                  <img src="{% static 'assets/img/profile.jpg'%}" class="img-fluid rounded b-shadow-a" alt="">
+                </div>
+                
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services-mf pt-5 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Services
+            </h3>
+            <p class="subtitle-a">
+              Let's build something amazing together.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-code-slash"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Web Design & Development</h2>
+              <p class="s-description text-center">
+                Plan, create and code internet sites and web pages, many of which combine text with sounds, pictures,
+                graphics and video clips. It and can mean working on a brand new website or updating an already existing
+                site.
+              </p>
+              <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-phone-flip"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Mobile and Apps</h2>
+              <p class="s-description text-center">
+                Create, maintain, and implement the source code to develop mobile apps and mobile platform programs that
+                meet the needs and requirements of the clients using the computer programming languages.
+              </p>
+              <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-code-square"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Digital Marketing</h2>
+              <p class="s-description text-center">
+                Develop and Implement strategies that promote a company or brand's products. Manage various channels
+                like social media, Google Ads, website content and email marketing to deliver a persuasive and cohesive
+                marketing message to audience.
+              </p>
+              <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-laptop"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Responsive Design</h2>
+              <p class="s-description text-center">
+                Designing engaging and responsive landing pages. Integrating client CMS programs and data feeds into
+                websites. Optimising sites for maximum speed and scalability. Employing industry and design best
+                practice through website build process.
+              </p>
+              <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-palette"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Graphic Design</h2>
+              <p class="s-description text-center">
+                Develop visual concepts by hand or with computer software. Intended to captivate, inform, inspire,
+                and/or persuade, a designer's end product is often used in a marketing or promotional campaign, or a
+                public announcement.
+              </p>
+              <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-people"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Marketing Services</h2>
+              <p class="s-description text-center">
+                Develop promotional strategies, assess the performance of staff, coordinating different teams, managing
+                the budgets, researching new marketing and client opportunities, analyzing data, and developing
+                solutions to optimize marketing services and operations.
+              </p>
+              <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Services Section -->
+
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="work" class="portfolio-mf sect-pt2 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Portfolio
+            </h3>
+            <p class="subtitle-a">
+              Here are some of the projects I've worked on.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        {% for port in portfolio %}
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="/portfolio/{{ port.slug }}">
+              <div class="work-img">
+                <img src="{{ port.logo.url }}" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="{% static 'assets/img/profile.jpg'%}" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Manoj Khanal</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Web Developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>manojkhanal936@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>+977-9860427842</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skills</p>
-                    <span>HTML</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
-                        aria-valuemin="0" aria-valuemax="100">85%</div>
-                    </div>
-                    <span>CSS3</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100">75%</div>
-                    </div>
-                    <span>Python</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100">60%</div>
-                    </div>
-                    <span>Django</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100">70%</div>
-                    </div>
-                    <span>Graphic Design</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100">50%</div>
-                    </div>
-                    <span>Bootstrap</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100">75%</div>
-                    </div>
-                    <span>Tailwind CSS</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100">70%</div>
-                    </div>
+                <div class="col-sm-8">
+                  <h2 class="w-title"><a href="/portfolio/{{ port.slug }}"> {{ port.name }}</a></h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">{{ port.category }}</span>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About Me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      Hello, I am Manoj Khanal. I recently graduated in B.Sc CSIT from Patan Multiple Campus in Lalitpur, Nepal. I live in Koteshwor-32, Kathmandu.
-                    </p>
-                    <p class="lead">
-                      I work as a web developer. I have a few programming languages under my belt. I can manage websites ranging from simple to complex. Python, Django, Django Rest Framework, HTML, CSS3, JavaScript, Tailwind CSS, Wordpress, Bootstrap, and other technologies are among my specialties. I am also familiar with version control system like Git, as well as docker and authentication system.
-                    </p>
-                    <p class="lead">
-                      In terms of work experience, I have mostly worked as a freelancer. As a backend developer, I worked at Adhyaaya Technologies in Pulchowk for 6 months. I had finished several projects. I've also worked with Awiskaar Solutions. I had managed projects from inception to completion. My completed projects are briefly described in the portfolio section.
-                    </p>
-                    <p class="lead">
-                      I enjoy building everything from small business sites to rich interactive web applications. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.
-                    </p>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="/portfolio/{{ port.slug }}"> <span class="bi bi-eye-fill"></span></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- End About Section -->
+        {% endfor %}
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                Let's build something amazing together.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-code-slash"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Design & Development</h2>
-                <p class="s-description text-center">
-                  Plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips.  It and can mean working on a brand new website or updating an already existing site.
-                </p>
-                <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-phone-flip"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Mobile and Apps</h2>
-                <p class="s-description text-center">
-                  Create, maintain, and implement the source code to develop mobile apps and mobile platform programs that meet the needs and requirements of the clients using the computer programming languages.
-                </p>
-                <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-code-square"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Digital Marketing</h2>
-                <p class="s-description text-center">
-                  Develop and Implement strategies that promote a company or brand's products. Manage various channels like social media, Google Ads, website content and email marketing to deliver a persuasive and cohesive marketing message to audience.
-                </p>
-                <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-laptop"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Responsive Design</h2>
-                <p class="s-description text-center">
-                  Designing engaging and responsive landing pages. Integrating client CMS programs and data feeds into websites. Optimising sites for maximum speed and scalability. Employing industry and design best practice through website build process.
-                </p>
-                <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-palette"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Graphic Design</h2>
-                <p class="s-description text-center">
-                  Develop visual concepts by hand or with computer software. Intended to captivate, inform, inspire, and/or persuade, a designer's end product is often used in a marketing or promotional campaign, or a public announcement.
-                </p>
-                <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Marketing Services</h2>
-                <p class="s-description text-center">
-                  Develop promotional strategies, assess the performance of staff, coordinating different teams, managing the budgets, researching new marketing and client opportunities, analyzing data, and developing solutions to optimize marketing services and operations.
-                </p>
-                <a class="btn hero-btn js-scroll px-4 ms-3" href="#contact" role="button">Hire Me</a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Services Section -->
-
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt2 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Here are some of the projects I've worked on.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          {% for port in portfolio %}
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="/portfolio/{{ port.slug }}">
-                <div class="work-img">
-                  <img src="{{ port.logo.url }}" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title"><a href="/portfolio/{{ port.slug }}"> {{ port.name }}</a></h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">{{ port.category }}</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="/portfolio/{{ port.slug }}"> <span class="bi bi-eye-fill"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-
-          <!-- <div class="col-md-4">
+        <!-- <div class="col-md-4">
             <div class="work-box">
               <a href="{% static 'assets/img/readers_mind.png'%}" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
@@ -297,196 +271,225 @@
               </div>
             </div>
           </div> -->
-        
 
+
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+
+
+
+  <!-- ======= Testimonials Section ======= -->
+  <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="over-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Testimonials
+            </h3>
+            <p class="subtitle-a">
+              What My Seniors Think of Me!
+            </p>
+            <div class="line-mf"></div>
+          </div>
         </div>
       </div>
-    </section><!-- End Portfolio Section -->
+      <div class="row">
+        <div class="col-md-12">
 
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
 
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                  <div class="author-test">
+                    <img src="{% static 'assets/img/pujan.jpg'%}" alt="" class="rounded-circle b-shadow-a">
+                    <span class="author">Pujan Acharya</span>
+                    <span class="author_post">Operaion Head, Adhyaaya Technologies Pvt. Ltd</span>
 
-        <!-- ======= Testimonials Section ======= -->
-        <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-          <div class="over-mf"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="title-box text-center">
-                  <h3 class="title-a">
-                    Testimonials
-                  </h3>
-                  <p class="subtitle-a">
-                    What My Seniors Think of Me!
-                  </p>
-                  <div class="line-mf"></div>
+                  </div>
+                  <div class="content-test">
+                    <p class="description lead">
+                      Manoj is a seasoned software engineer with over two years of experience. He is passionate about
+                      Django Python, Front End Development, and WordPress. He is well-versed in PHP, MYSQL, and Git for
+                      version control. He has completed numerous test projects that resulted in successful products. He
+                      is an active member of the developer community in his hometown of Kathmandu, Nepal.
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                  <div class="author-test">
+                    <img src="{% static 'assets/img/sanjay.jpg'%}" alt="" class="rounded-circle b-shadow-a">
+                    <span class="author">Sanjay Khadka</span>
+                    <span class="author_post">Managing Director, Awiskaar Solutions</span>
+
+                  </div>
+                  <div class="content-test">
+                    <p class="description lead">
+                      I know Manoj to be a very serious and dedicated team member. He is a proactive, goal-oriented,
+                      responsible, and technically competent worker who is always willing to devote all of his time and
+                      effort to getting the job done. Manoj has exceptional analytical and problem-solving skills. He is
+                      an asset to any organization.
+
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-    
-                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                  <div class="swiper-wrapper">
-    
-                    <div class="swiper-slide">
-                      <div class="testimonial-box">
-                        <div class="author-test">
-                          <img src="{% static 'assets/img/pujan.jpg'%}" alt="" class="rounded-circle b-shadow-a">
-                          <span class="author">Pujan Acharya</span>
-                          <span class="author_post">CEO, Adhyaaya Technologies Pvt. Ltd</span>
+              <!-- End testimonial item -->
 
-                        </div>
-                        <div class="content-test">
-                          <p class="description lead">
-                            Manoj is a seasoned software engineer with over two years of experience. He is passionate about Django Python, Front End Development, and WordPress. He is well-versed in PHP, MYSQL, and Git for version control. He has completed numerous test projects that resulted in successful products. He is an active member of the developer community in his hometown of Kathmandu, Nepal.
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                  <div class="author-test">
+                    <img src="{% static 'assets/img/ap.jpg'%}" alt="" class="rounded-circle b-shadow-a">
+                    <span class="author">Aavash Pokhrel</span>
+                    <span class="author_post">Marketing Executive, Adhyaaya Technologies Pvt. Ltd</span>
 
-                          </p>
-                        </div>
-                      </div>
-                    </div><!-- End testimonial item -->
-    
-                    <div class="swiper-slide">
-                      <div class="testimonial-box">
-                        <div class="author-test">
-                          <img src="{% static 'assets/img/sanjay.jpg'%}" alt="" class="rounded-circle b-shadow-a">
-                          <span class="author">Sanjay Khadka</span>
-                          <span class="author_post">Managing Director, Awiskaar Solutions</span>
-
-                        </div>
-                        <div class="content-test">
-                          <p class="description lead">
-                            I know Manoj to be a very serious and dedicated team member. He is a proactive, goal-oriented, responsible, and technically competent worker who is always willing to devote all of his time and effort to getting the job done. Manoj has exceptional analytical and problem-solving skills. He is an asset to any organization.
-
-                          </p>
-                        </div>
-                      </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                      <div class="testimonial-box">
-                        <div class="author-test">
-                          <img src="{% static 'assets/img/testimonial-2.jpg'%}" alt="" class="rounded-circle b-shadow-a">
-                          <span class="author">Hari K. Khadka</span>
-                        <span class="author_post">Head Executive, Adhyaaya Technologies Pvt. Ltd</span>
-
-                        </div>
-                        <div class="content-test">
-                          <p class="description lead">
-                            Not only was our experience personal and friendly, his ability to identify and present our key messages in an imaginative and creative way gave us a huge amount of confidence in him. In many ways, Manoj understood our client's website needs better than we did and he complimented our vision perfectly. He's reliable, professional and easy to work with. I can’t recommend him highly enough and we look forward to continuing our working relationship together.
-
-                          </p>
-                        </div>
-                      </div>
-                    </div><!-- End testimonial item -->
                   </div>
-                  <div class="swiper-pagination"></div>
+                  <div class="content-test">
+                    <p class="description lead">
+                      He is one of the hard working collegues. Working alongside him is something I would like to do because he is so dedicated to his profession. He has been a huge help to me as a novice and is one of my mentor.
+
+                    </p>
+                  </div>
                 </div>
-    
-                <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                  <div class="author-test">
+                    <img src="{% static 'assets/img/hari.jpg'%}" alt="" class="rounded-circle b-shadow-a">
+                    <span class="author">Hari K. Khadka</span>
+                    <span class="author_post">CEO, Adhyaaya Technologies Pvt. Ltd</span>
+
+                  </div>
+                  <div class="content-test">
+                    <p class="description lead">
+                      Not only was our experience personal and friendly, his ability to identify and present our key
+                      messages in an imaginative and creative way gave us a huge amount of confidence in him. In many
+                      ways, Manoj understood our client's website needs better than we did and he complimented our
+                      vision perfectly. He's reliable, professional and easy to work with. I can’t recommend him highly
+                      enough and we look forward to continuing our working relationship together.
+
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
               
             </div> -->
-              </div>
-            </div>
-          </div>
-        </div><!-- End Testimonials Section -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Testimonials Section -->
 
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image route"
-      style="background-image: url({% static 'assets/img/overlay-bg.jpg'%})">
-      <!-- <div class="overlay-mf"></div> -->
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                       Contact
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <lottie-player src="{% static '/assets/js/contact.json'%}" background="transparent"  speed="1"  loop autoplay></lottie-player>
-
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> Koteshwor-32, Kathmandu Nepal</li>
-                        <li><span class="bi bi-phone"></span> +977-9860427842</li>
-                        <li><span class="bi bi-envelope"></span> manojkhanal936@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="paralax-mf footer-paralax bg-image route"
+    style="background-image: url({% static 'assets/img/overlay-bg.jpg'%})">
+    <!-- <div class="overlay-mf"></div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Contact
+                    </h5>
                   </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="" method="post" role="form" class="email-form">
-                        {% csrf_token %}
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3 hidden">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                  <div class="more-info">
+                    <lottie-player src="{% static '/assets/js/contact.json'%}" background="transparent" speed="1" loop
+                      autoplay></lottie-player>
+
+                    <ul class="list-ico">
+                      <li><span class="bi bi-geo-alt"></span> Koteshwor-32, Kathmandu Nepal</li>
+                      <li><span class="bi bi-phone"></span> +977-9860427842</li>
+                      <li><span class="bi bi-envelope"></span> manojkhanal936@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div>
+                    <form action="" method="post" role="form" class="email-form">
+                      {% csrf_token %}
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                              required>
                           </div>
                         </div>
-                      </form>
-                    </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                              required>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number"
+                              required>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                              required>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                              required></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12 text-center my-3 hidden">
+                          <div class="loading">Loading</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
-                  
                 </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End Contact Section -->
+    </div>
+  </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+</main><!-- End #main -->
 
-  {% endblock content %}
-  {% block js %}{% endblock js %}
+{% endblock content %}
+{% block js %}{% endblock js %}

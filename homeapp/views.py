@@ -29,6 +29,10 @@ def homePage(request):
     return render(request, 'homeapp/index.html', context)
 
 
+def aboutPage(request):
+    return render(request, 'homeapp/about.html')
+
+
 def portfolioList(request):
     portfolio = Portfolio.objects.all()
     
